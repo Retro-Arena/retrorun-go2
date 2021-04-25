@@ -333,7 +333,7 @@ static bool core_environment(unsigned cmd, void* data)
             }
             else if (strcmp(var->key, "reicast_internal_resolution") == 0)
             {
-                var->value = "640x480";
+                var->value = "320x240";
                 return true;
             }            
             else if (strcmp(var->key, "reicast_anisotropic_filtering") == 0)
@@ -438,7 +438,7 @@ static bool core_environment(unsigned cmd, void* data)
             }
 	    else if (strcmp(var->key, "parallel-n64-screensize") == 0)
             {
-                var->value = "640x480";
+                var->value = "320x240";
                 return true;
             }
             else
