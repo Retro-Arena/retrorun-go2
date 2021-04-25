@@ -431,6 +431,16 @@ static bool core_environment(unsigned cmd, void* data)
                 printf("Perspective correction resolution should be on for polygon mode\n");
                 return true;
             }
+	    else if (strcmp(var->key, "parallel-n64-gfxplugin") == 0)
+            {
+                var->value = "rice";
+                return true;
+            }
+	    else if (strcmp(var->key, "parallel-n64-screensize") == 0)
+            {
+                var->value = "640x480";
+                return true;
+            }
             else
             {
                 varmap_t::iterator iter = variables.find(var->key);
